@@ -1,0 +1,24 @@
+[project]
+title = "Video game Insights"
+version = "0.1.0"
+port = 8501
+slug = "{vg-insight}"
+entrypoint = "hello.py"
+
+[branding]
+name = "Video Games"
+logo = "images/joystick.png"
+favicon = "images/favicon.ico"
+primaryColor = "#F89613"
+
+[data.video_games]
+type = "csv"
+path = "data/vgsales.csv"
+
+[data.iris_csv]
+type = "csv"
+path = "data/iris.csv"
+
+[logging]
+level = "INFO"
+format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s" 
